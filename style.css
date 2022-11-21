@@ -1,0 +1,72 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    max-width: 300px;
+    min-width: 600px;
+    background-color: #fff;
+    max-height: 300px;
+    min-height: 600px;
+    border-radius: 50px;
+    box-shadow: 0 0 40px -20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: 
+        "a b"
+        "a b"
+        "c c"
+        "d d"
+        "e e";
+    grid-template-rows: repeat(2, 30%) repeat(3, 10%);
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+.range {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: right;
+    width: 80%;
+}
+.range span:nth-of-type(2){
+    display: inline-block;
+    font-size: 1.3rem;
+    width: 40px;
+}
+.range:nth-child(3) {
+    grid-area: c;
+}
+.range:nth-child(4) {
+    grid-area: d;
+}
+.range:nth-child(5) {
+    grid-area: e;
+}
+#r, #g, #b {
+    width: 65%;
+}
+.result {
+    height: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.result p{
+    letter-spacing: 3px;
+}
+.result:nth-child(1) {
+    grid-area: a;
+}
+.result:nth-child(2) {
+    grid-area: b;
+}

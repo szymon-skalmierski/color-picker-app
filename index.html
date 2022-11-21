@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Picker App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="box">
+        <div class="result" id="rgb">
+            <h1>RGB</h1>
+            <p>rgb(<span>5</span>, <span>255</span>, <span>50</span>)</p>
+        </div>
+        <div class="result" id="hex">
+            <h1>HEX</h1>
+            <p>#ff00ff</p>
+        </div>
+        <div class="range"><span>RED: </span><input type="range" id="r" min="0" max="255"><span>255</span></div>
+        <div class="range"><span>GREEN: </span><input type="range" id="g" min="0" max="255"><span>255</span></div>
+        <div class="range"><span>BLUE: </span><input type="range" id="b" min="0" max="255"><span>255</span></div>
+    </div>
+</body>
+</html>
